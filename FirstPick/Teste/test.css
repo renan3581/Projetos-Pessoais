@@ -1,0 +1,95 @@
+/*---------------------------------Head-------------------------------------*/
+.head1 {
+    background-image: url(../Imagens/1.jpg);
+    background-size: 100% 100%;
+    color: rgb(186, 253, 253);
+   }
+  
+  a{
+    color: rgb(186, 253, 253); 
+    text-shadow:2px 2px 2px rgb(255, 5, 5) ; 
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-size: 12px; 
+    padding: 4px; 
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+    a:hover{color: crimson;}
+    a:active{color:#000000}
+    
+  .head1 .nav1 li{
+    display: inline-block; 
+      border: 1px solid rgb(186, 253, 253); 
+      box-shadow: 2px 2px 2px crimson;
+      margin-right: 5px;  
+  }
+    
+  .head1 .nav1 ul{
+    text-align: right;
+    margin-right: 1%;
+  }  
+  /*----------------------------------Body------------------------------------*/
+  
+  body{
+    font-family: arial sans-serif;
+    font-variant: small-caps;
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+  
+  .titulo{
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px crimson;
+    
+  }
+  
+  .main1{
+    background-color: rgb(25, 32, 42);
+    margin: 3% 5%;
+    color:rgb(255, 255, 255);
+    overflow: auto;
+    padding: 10px}
+  
+  
+  
+  
+  .nav2 li{list-style: none;}
+  
+  .nav2 .card{
+    width:  32%; 
+    display: inline-block;
+    float: left;
+    
+   
+  }
+  
+  .card1,.card2{
+    margin-right: 2%;
+  }
+  
+  
+  .nav2 .A1{ 
+      background-color: rgb(25, 32, 42);
+      margin: 5% 5%;
+      color:rgb(255, 255, 255);
+      padding:2%
+  }
+  
+  /*-----------------------------------Bottom----------------------------------*/
+  .cp1{
+    text-align: center;
+    padding: 6%;
+    background-color: rgb(25, 32, 42);
+    text-shadow: 2px 2px 2px crimson;
+  }
+  
+  .separacao{
+    text-align: center;
+    border: #ffffff;
+    border: 2px;
+    text-shadow: 2px 2px 2px crimson;
+  }
+  
+  

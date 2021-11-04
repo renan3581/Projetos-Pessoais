@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../Css/FirstPick-Home.css">
+    <link rel="stylesheet" href="../Css/FirstPick-Padrao.css">
+
+
+     <!-- Link Google Fonts  e Font Awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+     
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+   
+    <!-- Bootstrap 5 -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  
+    </head>
+
+  <body>
+    <div class="img"></div>
+
+    <!-- Button - Voltar ao Topo-->
+    <button onclick="VoltarTopo()"  id="topo">Topo <i class=" fa fa-arrow-alt-up"></i></button>
+
+       <!--                                                                  Menu                                                                                -->
+       <header class="header">
+      
+          <div class="menu">
+             <div class="logo"><img class="img-logo" src="../Imagens/FirstPick.png" alt="Logo"></div>
+                
+                <ul>
+                <li><a  target="_blank" class="home">Home</a></li>
+                <li><a href="FirstPick-Compare.html" onclick="ChamarCompare()" target="_blank" class="compare">Compare</a></li>
+                <li><a href= "" onclick="ChamarNoticias()" target="_blank" class="noticias">Notícias</a></li>
+                <li><a href= "FirstPick-Promocoes.html" onclick="ChamarPromocoes()" target="_blank" class="promocoes">Promoções</a></li>
+                <li><i href= "FirstPick-Login-html" onclick="ChamarLogin()" id="ico-log" class="fas fa-sign-in-alt"></i></li>
+                </ul>
+            </div>
+        </header>
+
+    <div id="container">  
+        
+        <div id="h1-des-sem"><h1>Destaque da Semana</h1></div>
+        <section id="dest-sem">
+            
+            <div id="desc-2">
+                <div id="des-e">
+                   <div id ="desc-e" >
+                       <div id="desc-e-img"><img id="des-e-imgl1" src="../Imagens/PH.jpg" alt=""></div>
+                       <div id="texto-e">
+                            <div><p id="nome-e">Nome: </p></div>
+                            <div><p id="desen-e">Desenvolvedora: </p></div>
+                            <div><p id="dist-e">Distribuidora: </p></div>
+                      </div>
+                    </div>
+                   <div id="carac-e">
+                    <div id="c1-e"><p id="p-e-1">Tempo de Jogo: </p></div>
+                    <div id="c2-e"><p id="p-e-2">Quantidade de Trofeus: </p></div>
+                    <div id="c3-e"><p id="p-e-3">Género: </p></div>
+                    <div id="c4-e"><p id="p-e-4">Cross-play: </p></div>
+                    <div id="c5-e"><p id="p-e-5">Exclusivo: </p></div>
+                   </div>
+                </div>
+                <div><img id="logo-vs" src="../Imagens/Vs.png" alt=""></div>
+                <div id="des-d">
+                    <div id ="desc-d" >  
+                        <div id="texto-d">
+                             <div><p id="nome-d">Nome: </p></div>
+                             <div><p id="desen-d">Desenvolvedora: </p></div>
+                             <div><p id="dist-d">Distribuidora: </p></div> 
+                       </div>
+                       <div id="desc-d-img"><img id="des-d-imgl1" src="../Imagens/PH.jpg" alt=""></div>
+                     </div>
+                    <div id="carac-d">
+                     <div id="c1-d"><p id="p-d-1">Tempo de Jogo: </p></div>
+                     <div id="c2-d"><p id="p-d-2">Quantidade de Trofeus:  </p></div>
+                     <div id="c3-d"><p id="p-d-3">Género: </p></div>
+                     <div id="c4-d"><p id="p-d-4">Cross-play: </p></div>
+                     <div id="c5-d"><p id="p-d-5">Exclusivo: </p></div>
+                    </div>
+                 </div>
+
+            </div>                
+        </section>
+        
+        <section id="lan-sem"> 
+            <div><h1>Lançamentos da Semana</h1></div>
+            
+            <div id="carrossel">
+                
+                <div id="gallery">
+                        
+                         <div id="lan-imags">
+                            <div id="lan-img"><img id="img-l1" src="../Imagens/PH.jpg" alt="">1</div>
+                            <div id="lan-img"><img id="img-l2" src="../Imagens/PH.jpg" alt="">2</div>
+                            <div id="lan-img"><img id="img-l3" src="../Imagens/PH.jpg" alt="">3</div>
+                            <div id="lan-img"><img id="img-l4" src="../Imagens/PH.jpg" alt="">4</div>
+                            <div id="lan-img"><img id="img-l5" src="../Imagens/PH.jpg" alt="">5</div>
+                            <div id="lan-img"><img id="img-l6" src="../Imagens/PH.jpg" alt="">6</div>
+                            <div id="lan-img"><img id="img-l7" src="../Imagens/PH.jpg" alt="">7</div>
+                            <div id="lan-img"><img id="img-l8" src="../Imagens/PH.jpg" alt="">8</div>
+                            <div id="lan-img"><img id="img-l9" src="../Imagens/PH.jpg" alt="">9</div>
+                            <div id="lan-img"><img id="img-l10" src="../Imagens/PH.jpg" alt="">10</div>
+                         </div>  
+                </div>
+                
+            </div>
+
+        </section>
+        
+        <section id="noticias-body">
+            <div><h1>Notícias</h1></div>
+
+            <div id="noticias">
+                <div id="noticias-int">
+
+                    <div class="container">
+                    
+                        <div class="row row-cols-3">
+                          
+                          <div class="col" id="coluna1"><img id="img-not1" src="../Imagens/PH.jpg" alt="" srcset=""></div>
+                          <div class="col" id="coluna2"><p id="not-texto1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis dolor quisquam quo eos, placeat, quasi dignissimos ullam debitis quidem expedita sed officiis. Provident voluptatum dolorem maiores rem, asperiores at? Unde.</p></div>
+                          
+                          <div class="col" id="coluna3"><img id="img-not2" src="../Imagens/PH.jpg" alt="" srcset=""></div>
+                          <div class="col" id="coluna4"><p id="not-texto2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate minima, expedita voluptatibus commodi necessitatibus iure modi laudantium illum tempore repellendus rerum ipsum soluta aperiam quis maiores asperiores minus rem ex?</p></div>
+                        
+                          <div class="col" id="coluna5"><img id="img-not3" src="../Imagens/PH.jpg" alt="" srcset=""></div>
+                          <div class="col" id="coluna6"><p id="not-texto3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis dolor quisquam quo eos, placeat, quasi dignissimos ullam debitis quidem expedita sed officiis. Provident voluptatum dolorem maiores rem, asperiores at? Unde.</p></div>
+                          
+                          <div class="col" id="coluna7"><img id="img-not4" src="../Imagens/PH.jpg" alt="" srcset=""></div>
+                          <div class="col" id="coluna8"><p id="not-texto4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis dolor quisquam quo eos, placeat, quasi dignissimos ullam debitis quidem expedita sed officiis. Provident voluptatum dolorem maiores rem, asperiores at? Unde.</p></div>
+                          
+                          <div class="col" id="coluna9"><img id="img-not5" src="../Imagens/PH.jpg" alt="" srcset=""></div>
+                          <div class="col" id="coluna10"><p id="not-texto5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis dolor quisquam quo eos, placeat, quasi dignissimos ullam debitis quidem expedita sed officiis. Provident voluptatum dolorem maiores rem, asperiores at? Unde.</p></div>
+                          
+                          <div class="col" id="coluna11"><img id="img-not6" src="../Imagens/PH.jpg" alt="" srcset=""></div>
+                          <div class="col" id="coluna12"><p id="not-texto6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis dolor quisquam quo eos, placeat, quasi dignissimos ullam debitis quidem expedita sed officiis. Provident voluptatum dolorem maiores rem, asperiores at? Unde.</p></div>
+                          
+                           
+                        </div>
+                    
+                      </div>
+                       
+                        
+                        
+                </div>
+            </div>     
+        </section>
+        
+        <section id="promo">
+            <div><h1>Promoções</h1></div>
+            
+
+            <div id="area-promocoes">
+                <figure class="margem">
+                     <a href="#" title="Biomutant">
+                         <img id="promo-img1" class="imagem" height="136" src="../Imagens/PH.jpg" alt="Biomutant" title="Biomutant" />
+                     </a>
+                     <p id="promo-p1">1</p>
+         
+                     <div class="preco">
+                         <button id="btn1">R$ 174,99</button>
+                     </div>
+         
+                     <div id="desconto1" class="desconto">
+                         -12%
+                     </div>
+                </figure>
+         
+                <figure class="margem">
+                     <a href="#" title="cities skylines">
+                         <img id="promo-img2" class="imagem" height="136" src="../Imagens/PH.jpg" alt="cities skylines" title="cities skylines" />
+                     </a>
+                     <p id="promo-p2">2</p>
+         
+                     <div class="preco">
+                         <button id="btn2">R$ 14,59</button>
+                     </div>
+         
+                     <div id="desconto2"  class="desconto">
+                         -80%
+                     </div>
+                 </figure>
+         
+                 <figure class="margem">
+                     <a href="#" title="conan exiles">
+                         <img id="promo-img3" class="imagem" height="136" src="../Imagens/PH.jpg" alt="conan exiles" title="conan exiles" />
+                     </a>
+                     <p id="promo-p3">3</p>
+         
+                     <div class="preco">
+                         <button id="btn3">R$ 94,37</button>
+                     </div>
+         
+                     <div id="desconto3" class="desconto">
+                         -30%
+                     </div>
+                 </figure>
+         
+                 <figure class="margem">
+                     <a href="#" title="control ultimate edition">
+                         <img id="promo-img4" class="imagem" height="136" src="../Imagens/PH.jpg" alt="control ultimate edition" title="control ultimate edition"" />
+                     </a>
+                     <p id="promo-p4">4</p>
+         
+                     <div class="preco">
+                         <button id="btn4">R$ 103,20</button>
+                     </div>
+
+                     <div id="desconto4" class="desconto">
+                        -20%
+                    </div>
+                </figure>
+        
+                <figure class="margem">
+                    <a href="#" title="crusader kings III">
+                        <img id="promo-img5" class="imagem" height="136" src="../Imagens/PH.jpg" alt="crusader kings III" title="crusader kings III" />
+                    </a>
+                    <p id="promo-p5">5</p>
+        
+                    <div class="preco">
+                        <button id="btn5">R$ 117,89</button>
+                    </div>
+        
+                    <div id="desconto5"  class="desconto">
+                        -10%
+                    </div>
+                </figure>
+        
+                <figure class="margem">
+                    <a href="#" title="yberpunk 2077">
+                        <img id="promo-img6" class="imagem" height="136" src="../Imagens/PH.jpg" alt="cyberpunk 2077" title="cyberpunk 2077" />
+                    </a>
+                    <p id="promo-p6">6</p>
+        
+                    <div class="preco">
+                        <button id="btn6">R$ 149,99</button>
+                    </div>
+        
+                    <div id="desconto6"  class="desconto">
+                        -25%
+                    </div>
+                </figure>
+        
+                <figure class="margem">
+                    <a href="#" title="days gone">
+                        <img id="promo-img7" class="imagem" height="136" src="../Imagens/PH.jpg" alt="days gone" title="days gone" />
+                    </a>
+                    <p id="promo-p7">7</p>
+        
+                    <div class="preco">
+                        <button id="btn7">R$ 174,99</button>
+                    </div>
+        
+                    <div id="desconto7" class="desconto">
+                        -12%
+                    </div>
+                </figure>
+            
+
+        </section>
+
+    </div>     
+  <!--                                                                   Rodapé                                                                              -->
+
+        <footer class="body-bottom">
+                
+            <div class="esquerda">
+            <ul>
+                <li><a href="#" target="_blank">Termos de uso</a></li>
+                <li><a href="#" target="_blank">Privacidade</a></li>
+                <li><a href="#" target="_blank">Regras</a></li>
+            </ul>
+            </div>
+            
+            <div class="divisoria-esquerda"></div>
+            
+            <div class="meio"><p>&copy; 2021 FirstPick, Todos os direitos reservados</p></div>
+        
+            <div class="divisoria-direita"></div>
+
+            <div class="direita">
+            <ul>
+                <li><a href="#" target="_blank">Sobre a FirstPick</a></li>
+                <li><a href="#" target="_blank">Contato</a></li>
+                <li><a href="#" target="_blank">Equipe</a></li>
+            </ul>
+            </div>
+        </footer>  
+  
+  </body>
+
+  <script src="../Js/Home2.js"></script>
+  <script src="../Js/Chamadas.js"></script>
+  <script src="../Js/VoltarTopo.js"></script>
+
+</html>

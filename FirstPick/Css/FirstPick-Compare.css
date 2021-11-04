@@ -1,0 +1,187 @@
+/*###################################################################------Corpo------########################################################################*/
+
+.img {
+    background-image: url(../Imagens/Switch1.jpg);
+    background-repeat:no-repeat ;
+    background-size: 100% 100%;
+    position: fixed;
+    mix-blend-mode: normal;
+    z-index: 0;
+    width: 99.7%;
+    height: 1000px;
+    mix-blend-mode: normal;
+    margin-left: 0;
+    filter: blur(7px) grayscale(0.2);
+    
+}
+
+#container{
+    height: 1080px;
+}
+
+
+/*###################################################################------Menu------#########################################################################*/
+
+.header .compare{
+    color: white;
+    
+}
+
+
+/*###################################################################------Compare------#########################################################################*/
+
+#description{
+    position: relative;
+    width: 700px;
+    height: 250px;
+    left: 32.5%;
+    top: 50px;
+    font-family: rubik;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(189, 188, 188);
+    background: rgba(0, 0, 0, 0.5);
+    border: solid black 2px;
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    visibility: visible;
+    
+    
+}
+
+#description p{
+    margin-top: 70px;
+   
+}
+
+
+
+.flex{
+    display: flex;
+    height: 30px;
+    width: 100%;
+    margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+    border: solid red 2px;
+    color: white;
+    
+
+}
+
+.seach{
+    height: 40px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    border: solid black 2px;
+    border-radius: 7px;
+    font-size: 22px;
+    font-family: rubik;
+    backdrop-filter: blur(15px);
+    color: white;
+    position: relative;
+    top: 40px;
+    margin-left: 14.5%;
+    
+
+    
+}
+
+.button-compare{
+    position: relative;
+    height: 50px;
+    width: 200px;
+
+    left: 45.0%;
+    top: 100px;
+
+    font-size: 22px;
+    font-family: rubik;
+    color: white;
+    font-weight: 500;
+    
+   
+    border-radius: 10px;
+    border: solid black 2px;
+    box-shadow: rgba(0, 0, 0, 1) 2px 2px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    
+
+}
+
+.button-compare:hover{
+    background: rgb(255, 255, 255);
+    color: black;
+    
+}
+
+.button-compare:active{
+    background: rgba(255, 255, 255, 1);
+    color: black;
+    transform: translateY(2px);
+    box-shadow: rgba(255, 255, 255, 0.5) 1px 1px;
+}
+
+
+/*###################################################################------Compare - Pós------#########################################################################*/
+
+#C1, #C2, #C3{
+    position: absolute;
+    border: black 1px solid;
+    height: 40%;
+    width: 20%;
+    visibility: visible;
+    top: 0;
+    margin-top: 8.9%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px) ;
+    border-radius: 10px;
+    display: none;
+}
+
+
+#C1{
+    left: 0;
+    margin-left: 11%;
+    
+}
+
+#C3{
+    right:0;
+    margin-right: 11%;
+}
+
+#C1 div{
+    width:90%;
+    height: 10%;
+    border: solid rgba(255, 255, 255, 0.082) 2px;
+    margin: auto;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 10px;
+    background-color:rgba(255, 255, 255, 0.068) ;
+}
+
+#C2 div{
+    width: 90%;
+    border: solid rgba(255, 255, 255, 0.082) 2px;
+    margin: auto;
+    height: 10%;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 10px;
+    background-color:rgba(255, 255, 255, 0.068) ;
+}
+
+#C3 div{
+    width: 90%;
+    border: solid rgba(255, 255, 255, 0.082) 2px;
+    margin: auto;
+    height: 10%;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 10px;
+    background-color:rgba(255, 255, 255, 0.068) ;
+}
+

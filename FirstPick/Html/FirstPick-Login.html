@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        
+        <link rel="stylesheet" href="../Css/FirstPick-Login.css">
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
+
+        <!-- Add Firebase products that you want to use -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+
+    
+
+    </head>
+
+    <body>
+        <div class="bg-img"></div>
+            <div id="container">
+            
+                <div class="content" >
+                
+                    <div class="Janela-Central">
+                        
+                        <div class="logo"><img src="../Imagens/FirstPick.png" alt="Logo"></div>
+                    
+                        <form action="">
+                            <input id="email" type="text" placeholder="E-mail">
+                            <input id="senha" type="password" placeholder="Senha">
+                       </form>    
+                        
+                        <div class="recuperação"><a href="#" target="_blank">Esqueci minha senha.</a></div>
+                        
+                        <div class="cadastro"><p>Ainda não é cadastrado?<a href="FirstPick-CriarConta.html" onclick="chamarCadastro()" target="_blank"> Clique aqui.</a></p></div>
+
+                        <button  id="button-login">  Login </button>
+                    
+                    </div>
+
+                </div>
+
+
+<!--#######################################################################----Rodapé----####################################################################-->
+            
+            <div class="body-bottom">
+            
+                <div class="esquerda">
+                    <ul>
+                        <li><a href="#" target="_blank">Termos de uso</a></li>
+                        <li><a href="#" target="_blank">Privacidade</a></li>
+                        <li><a href="#" target="_blank"> Regras</a></li>
+                    </ul>
+                </div>
+                
+                <div class="divisoria-esquerda"></div>
+                
+                <div class="meio"><p>&copy; 2021 FirstPick, Todos os direitos reservados</p></div>
+            
+                <div class="divisoria-direita"></div>
+            
+                <div class="direita">
+                    <ul>
+                        <li><a href="#" target="_blank">Sobre a FirstPick</a></li>
+                        <li><a href="#" target="_blank">Contato</a></li>
+                        <li><a href="#" target="_blank">Equipe</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    
+        <script type="text/javascript" src="../Js/Chamadas.js"></script>
+        <script src="../Js/App.js"></script>
+        <script src="../Js/Authentication.js"></script>
+
+    
+</html>

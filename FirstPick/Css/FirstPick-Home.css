@@ -1,0 +1,609 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Rubik+Mono+One:regular);
+
+body{
+    margin: 0;
+    padding: 0%;
+    background-color: black;
+    
+}
+
+div#container{
+    padding:0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);   
+}
+
+#h1-des-sem{
+    
+    border: 1px  solid;
+}
+
+.header .home{
+    color: white;
+}
+
+
+.img {
+    background-image: url(../Imagens/omid-armin-w0erZAfnkjg-unsplash.jpg);
+    background-repeat:no-repeat ;
+    background-size: 100% 100%;
+    position: fixed;
+    mix-blend-mode: normal;
+    z-index: 0;
+    width: 99.7%;
+    height: 99.7%;
+    mix-blend-mode: normal;
+    margin-left: 0;
+    filter: blur(5px);
+    filter: saturate(-0.7);
+    
+    background-color: black;
+   
+}
+
+h1{
+    font-family: rubik;
+    text-shadow: rgba(0, 0, 0, 1) 2px 2px,rgba(0, 0, 0, 1) -2px -2px,rgba(0, 0, 0, 1) -2px 2px,rgba(0, 0, 0, 1) 2px -2px;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+p{
+    font-family:rubik, sans-serif , monospace;
+    text-shadow: rgba(0, 0, 0, 0.5) 1px 1px,rgba(0, 0, 0, 0.5) -1px -1px,rgba(0, 0, 0, 0.5) -1px 1px,rgba(0, 0, 0, 0.5) 1px -1px;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 750px ;
+    
+    
+    
+    
+}
+
+/*-----------------------------Destaques da Semana------------------------------*/
+#dest-sem{
+    display: flex;
+    align-items: center;
+    top:0px;
+    
+    
+   
+}
+
+#desc-2{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;/* editar no Js para colocar em coluna - Mobile*/
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 90%;
+    min-width: 958px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0);
+    
+}
+
+#dest-sem #des-e{
+    display: flex;
+    width: 40%;
+    height: 80%;
+    max-width: 500px;
+    min-width: 250px;
+    overflow: visible ;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px black solid;
+    
+
+}
+
+#dest-sem #des-d{
+    width: 40%;
+    height: 80%;
+    max-width: 500px;
+    min-width: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px black solid;
+}
+
+
+/*Desc-E*/
+#desc-e{
+    position: relative;
+    
+    width: 100%;
+    height: 30%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+#desc-e-img{
+    
+    width: 30%;
+    height: 150px;
+    max-width: 130px;
+    margin-top: 4%;
+    margin-left: 2%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#des-e-imgl1{
+    width: 100%;
+    height: 100%;
+}
+
+
+#texto-e{
+    text-align: center;
+    position: relative;
+    left: 10px;
+    width: 50%;
+    height: 30%;
+    font-family: rubik;
+    margin-top: 15px;
+    
+}
+
+#carac-e{
+    position: relative;
+    width: 90%;
+    height: 75%;
+    text-align: center;
+    
+}
+
+#carac-e p{
+    margin-top: 10px;
+}
+
+
+#carac-e #c1-e{
+    margin-top: 18%;
+    background-color: rgba(255, 255, 255, 0.082);
+    width: 100%;
+    height: 10%;
+    backdrop-filter: blur(15px);
+    border-radius: 10px ;
+    border: solid rgba(255, 255, 255, 0.267) 1px;
+}
+#carac-e #c2-e{
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.082);
+    width: 100%;
+    height: 10%;
+    backdrop-filter: blur(15px);
+    border-radius: 10px ;
+    border: solid rgba(255, 255, 255, 0.267) 1px;
+    
+  
+}
+#carac-e #c3-e{
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.082);
+    width: 100%;
+    height: 10%;
+    backdrop-filter: blur(15px);
+    border-radius: 10px ;
+    border: solid rgba(255, 255, 255, 0.267) 1px;
+    
+  
+}
+
+#carac-e #c4-e{
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.082);
+    width: 100%;
+    height: 10%;
+    backdrop-filter: blur(15px);
+    border-radius: 10px ;
+    border: solid rgba(255, 255, 255, 0.267) 1px;
+    
+  
+}
+
+#carac-e #c5-e{
+    margin-top: 13px;
+    background-color: rgba(255, 255, 255, 0.082);
+    width: 100%;
+    height: 10%;
+    backdrop-filter: blur(15px);
+    border-radius: 10px ;
+    border: solid rgba(255, 255, 255, 0.267) 1px;
+    
+}
+
+
+/*desc-D*/
+
+#desc-d{
+    position: relative;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+#desc-d-img{
+    margin-right: -22%;
+    margin-left: 18%;
+    margin-top: 2%;
+    width: 30%;
+    height: 150px;
+    max-width: 130px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+#des-d-imgl1{
+    width: 100%;
+    height: 100%;
+}
+
+
+#texto-d{
+    
+    text-align: center;
+    position: relative;
+    width: 50%;
+    height: 30%;
+    font-family: rubik;
+    margin-left: 4%;
+    margin-top: 15px;
+}
+
+
+#carac-d{
+    position: relative;
+    margin: auto;
+    width: 90%;
+    height: 75%;
+    text-align: center;
+    
+}
+
+#carac-d p{
+    margin-top: 10px;
+}
+
+#carac-d #c1-d{
+    margin-top: 80px;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(255, 255, 255, 0.041);
+    backdrop-filter: blur(15px);
+    border-radius: 10px ;
+    border: solid rgba(255, 255, 255, 0.267) 1px;
+
+        
+}
+#carac-d #c2-d{
+    margin-top: 10px;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(255, 255, 255, 0.082);
+    backdrop-filter: blur(15px);
+    border-radius: 10px ;
+    border: solid rgba(255, 255, 255, 0.267) 1px;
+        
+}
+#carac-d #c3-d{
+    margin-top: 10px;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(255, 255, 255, 0.082);
+    backdrop-filter: blur(15px);
+    border-radius: 10px ;
+    border: solid rgba(255, 255, 255, 0.267) 1px;
+        
+}
+
+#carac-d #c4-d{
+    margin-top: 10px;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(255, 255, 255, 0.082);
+    backdrop-filter: blur(15px);
+    border-radius: 10px ;
+    border: solid rgba(255, 255, 255, 0.267) 1px;
+        
+}
+
+#carac-d #c5-d{
+    margin-top: 13px;
+    
+    width: 100%;
+    height: 10%;
+    background-color: rgba(255, 255, 255, 0.082);
+    backdrop-filter: blur(15px);
+    border-radius: 10px ;
+    border: solid rgba(255, 255, 255, 0.267) 1px;
+        
+}
+
+
+
+
+
+/*-----------------------------Lançamentos da Semana------------------------------*/
+
+#lan-sem{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 860px;
+    
+}
+ 
+
+#carrossel{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 100px;
+}
+
+
+button#btn-left{
+    position: relative;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px white solid;
+    border-radius:100% ;
+    height: 30px;
+    color: white;
+    
+}
+
+
+button#btn-right{
+    position: relative;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px white solid;
+    border-radius:100% ;
+    height: 30px;
+    color: white;
+}
+
+
+
+#gallery{
+    width: 85%;
+    overflow-x: scroll;
+    height: 350px;
+    
+    
+}
+
+
+#lan-imags{
+    
+    display: flex;
+    flex-flow: row nowrap;
+    
+    height: 200px;
+    width: 1920px;
+    
+    justify-content: space-between;
+    
+   
+}
+
+
+#lan-img{
+    
+    
+    border: rgba(0, 0, 0, 0.2) solid 2px;
+    width: 9%;
+    border-radius: 10px;
+    height: 300px;
+    overflow: hidden;
+}
+
+
+img#img-l1, #img-l2,#img-l3,#img-l4,#img-l5,
+#img-l6,#img-l7,#img-l8,#img-l9,#img-l10{
+    max-width: 100%;
+    height: 100%;
+}
+
+
+
+/*-----------------------------Noticias------------------------------*/
+
+
+
+#noticias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#noticias-int{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 82%;
+    height: 85%;
+    max-width: 2000px;
+    border: solid black 1px;
+    border-radius: 10px ;
+    overflow-y: scroll;
+
+    font-family: rubik;
+}
+
+
+
+.container{
+    margin-top: 20px;
+   
+}
+
+
+
+#coluna1,#coluna3,#coluna5,#coluna7,#coluna9,#coluna11{
+    margin-bottom:20px;
+    height: 230px;
+    width: 300px;
+}
+
+#img-not1,#img-not2,#img-not3,#img-not4,#img-not5,#img-not6{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#coluna2, #coluna4,#coluna6,#coluna8,#coluna10,#coluna12{
+    text-align: left;
+    margin-top: 6%;
+    height: 150px;
+    width: 350px;
+    margin-bottom: 2%;
+}
+
+#coluna2, #coluna4,#coluna6,#coluna8,#coluna10,#coluna12 p{
+    bottom: 0;
+}
+
+
+/*-----------------------------Promoções------------------------------*/
+
+#promo{
+    margin-top: 100px;
+}
+
+
+#area-promocoes {
+    position: relative;
+    top: 10%;
+    padding: 0;
+    text-align: center;
+    width: 81%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+figure {
+    font-family: rubik;
+    background-color:rgba(0, 0, 0, 0.6);
+    color: white;
+    display: inline-block;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 5px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+figure img {
+    display: block;
+    width: 250px;
+}
+
+figure p {
+    margin: 0;
+    margin-top: 10px;
+}
+
+figure button {
+    background-color:rgba(121, 121, 121, 0.6);
+    color: white;
+    border: none;
+    font-size: 17px;
+    font-weight: bolder;
+    margin: 0;
+    margin-top: 5px;
+    width: 100%;
+    height: 30px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    cursor: pointer;
+}
+
+figure button:hover {
+    background-color:red;
+    -webkit-transition: all .20s linear;
+    -moz-transition: all .20s linear;
+    transition: all .20s linear;
+}
+
+.preco {
+    width: 77%;
+    margin-left: auto;
+    margin-right: 4px;
+}
+
+.desconto {
+    background-color: green;
+    width: 17%;
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    top: 169.4px;
+    left: 5px;
+    line-height: 30.9px;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.imagem {
+    -webkit-transition: all .20s linear;
+    -moz-transition: all .20s linear;
+    transition: all .20s linear;
+}
+
+.imagem:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.margem {
+    margin-right: 10px;
+    margin-top: 5px;
+}

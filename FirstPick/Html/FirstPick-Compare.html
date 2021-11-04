@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../Css/FirstPick-Compare.css">
+    <link rel="stylesheet" href="../Css/FirstPick-Padrao.css">
+    
+    <!-- Link Google Fonts  e Font Awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+      
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+
+</head>
+<body>
+
+    <div class="img"></div>
+
+  
+
+    <div id="container">
+   
+     <!-- Button - Voltar ao Topo-->
+     <button onclick="VoltarTopo()"  id="topo">Topo <i class=" fa fa-arrow-alt-up"></i></button>
+     
+     <!--                                                                  Menu                                                                                -->
+       <header class="header">
+        
+         <div class="menu">
+           <div class="logo"><img class="img-logo" src="../Imagens/FirstPick.png" alt="Logo"></div>
+           
+           <ul>
+             <li><a href="FirstPick-Home.html" onclick="ChamarHome()" target="_blank" class="home">Home</a></li>
+             <li><a href="#" onclick="ChamarCompare()" target="_blank" class="compare">Compare</a></li>
+             <li><a href="FirstPick-Noticias.html" onclick="ChamarNoticias()" target="_blank" class="noticias">Notícias</a></li>
+             <li><a href="FirstPick-Promocoes.html" onclick="ChamarPromocoes()" target="_blank" class="promocoes">Promoções</a></li>
+             <li><i onclick="ChamarLogin()" id="ico-log" class="fas fa-sign-in-alt"></i></li>
+           </ul>
+         </div>
+   
+       </header>
+
+
+
+
+
+
+       <!--                                                                 Compare                                                                              -->
+            
+          =    <div class="Escolha">
+                      <article id="description"> 
+                          <p>Para realizar a comparação, basta inserir o nome dos jogos nas barras de pesquisa abaixo, você pode escolher até três jogos por vez.</p>
+                      </article>
+                      <div class="flex">
+                        <div id="C1">
+                          <div><p id="c1-p1">Nome: </p></div>
+                          <div><p id="c1-p2">Desenvolvedora: </p></div>
+                          <div><p id="c1-p3">Distribuidora: </p></div>
+                          <div><p id="c1-p4">Tempo de Jogo: </p></div>
+                          <div><p id="c1-p5">Quantidade de Trofeus: </p></div>
+                          <div><p id="c1-p6">Género: </p></div>
+                          <div><p id="c1-p7">Cross-play: </p></div>
+                          <div><p id="c1-p8">Exclusivo: </p></div>
+
+                        </div>
+                        
+                        <div id="C2">
+                          <div><p id="c2-p1">Nome: </p></div>
+                          <div><p id="c2-p2">Desenvolvedora: </p></div>
+                          <div><p id="c2-p3">Distribuidora: </p></div>
+                          <div><p id="c2-p4">Tempo de Jogo: </p></div>
+                          <div><p id="c2-p5">Quantidade de Trofeus: </p></div>
+                          <div><p id="c2-p6">Género: </p></div>
+                          <div><p id="c2-p7">Cross-play: </p></div>
+                          <div><p id="c2-p8">Exclusivo: </p></div>
+                        
+                        </div>
+                        
+                        <div id="C3">
+                          <div><p id="c3-p1">Nome: </p></div>
+                          <div><p id="c3-p2">Desenvolvedora: </p></div>
+                          <div><p id="c3-p3">Distribuidora: </p></div>
+                          <div><p id="c3-p4">Tempo de Jogo: </p></div>
+                          <div><p id="c3-p5">Quantidade de Trofeus: </p></div>
+                          <div><p id="c3-p6">Género: </p></div>
+                          <div><p id="c3-p7">Cross-play: </p></div>
+                          <div><p id="c3-p8">Exclusivo: </p></div>
+
+                        </div>
+                      </div>
+
+
+
+
+
+
+
+                      <input type="search" placeholder="Nome do Jogo" class="seach" id="input1"></input>
+                      <input type="search" placeholder="Nome do Jogo" class="seach" id="input2"></input>
+                      <input type="search" placeholder="Nome do Jogo" class="seach" id="input3"></input>
+                      
+            </div>
+            <button type="submit" class="button-compare" >Compare</button>
+            
+      </div>       
+=
+
+
+
+
+       <!--                                                                   Rodapé                                                                              -->
+
+      <footer class="body-bottom">
+      
+        <div class="esquerda">
+          <ul>
+              <li><a href="#" target="_blank">Termos de uso</a></li>
+              <li><a href="#" target="_blank">Privacidade</a></li>
+              <li><a href="#" target="_blank">Regras</a></li>
+          </ul>
+        </div>
+        
+        <div class="divisoria-esquerda"></div>
+        
+        <div class="meio"><p>&copy; 2021 FirstPick, Todos os direitos reservados</p></div>
+      
+        <div class="divisoria-direita"></div>
+  
+        <div class="direita">
+          <ul>
+              <li><a href="#" target="_blank">Sobre a FirstPick</a></li>
+              <li><a href="#" target="_blank">Contato</a></li>
+              <li><a href="#" target="_blank">Equipe</a></li>
+          </ul>
+        </div>
+  
+        
+      </footer>
+
+
+    </div>
+    
+</body>
+
+  <script src="../Js/Chamadas.js"></script>
+  <script src="../Js/VoltarTopo.js"></script>
+  <script src="../Js/Comparação.js"></script>
+
+
+</html>

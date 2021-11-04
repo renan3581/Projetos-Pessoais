@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promoções</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../Css/FirstPick-Promocoes.css">
+    <link rel="stylesheet" href="../Css/FirstPick-Padrao.css">
+    
+
+    <!-- Link Google Fonts  e Font Awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+
+
+
+
+</head>
+<body>
+    <div class="img"></div>
+
+    <div id="container">
+   
+     <!-- Button - Voltar ao Topo-->
+     <button onclick="VoltarTopo()"  id="topo">Topo <i class=" fa fa-arrow-alt-up"></i></button>
+     
+     <!--                                                                  Menu                                                                                -->
+       <header class="header">
+        
+         <div class="menu">
+           <div class="logo"><img class="img-logo" src="../Imagens/FirstPick.png" alt="Logo"></div>
+           
+           <ul>
+             <li><a href="FirstPick-Home.html" onclick="ChamarHome()" target="_blank" class="home">Home</a></li>
+             <li><a href="FirstPick-Compare.html" onclick="ChamarCompare()" target="_blank" class="compare">Compare</a></li>
+             <li><a href="FirstPick-Noticias.html" onclick="ChamarNoticias()" target="_blank" class="noticias">Notícias</a></li>
+             <li><a href="#" onclick="ChamarPromocoes()" target="_blank" class="promocoes">Promoções</a></li>
+             <li><i onclick="ChamarLogin()" id="ico-log" class="fas fa-sign-in-alt"></i></li>
+           </ul>
+         </div>
+   
+       </header>
+
+    <!--                                                                   Promoções                                                                              -->
+    <div id="area-promocoes">
+       <figure class="margem">
+            <a href="#" title="Biomutant">
+                <img class="imagem" height="136" src="../Imagens/miniaturas/biomutant.jpg" alt="Biomutant" title="Biomutant" />
+            </a>
+            <p>BIOMUTANT</p>
+
+            <div class="preco">
+                <button>R$ 174,99</button>
+            </div>
+
+            <div class="desconto">
+                -12%
+            </div>
+       </figure>
+
+       <figure class="margem">
+            <a href="#" title="cities skylines">
+                <img class="imagem" height="136" src="../Imagens/miniaturas/cities skylines.jpg" alt="cities skylines" title="cities skylines" />
+            </a>
+            <p>CITIES SKYLINES</p>
+
+            <div class="preco">
+                <button>R$ 14,59</button>
+            </div>
+
+            <div class="desconto">
+                -80%
+            </div>
+        </figure>
+
+        <figure class="margem">
+            <a href="#" title="conan exiles">
+                <img class="imagem" height="136" src="../Imagens/miniaturas/conan exiles.jpg" alt="conan exiles" title="conan exiles" />
+            </a>
+            <p>CONAN EXILES: ISLE OF SPITAH</p>
+
+            <div class="preco">
+                <button>R$ 94,37</button>
+            </div>
+
+            <div class="desconto">
+                -30%
+            </div>
+        </figure>
+
+        <figure class="margem">
+            <a href="#" title="control ultimate edition">
+                <img class="imagem" height="136" src="../Imagens/miniaturas/controlultimate.jpg" alt="control ultimate edition" title="control ultimate edition"" />
+            </a>
+            <p>CONTROL ULTIMATE EDITION</p>
+
+            <div class="preco">
+                <button>R$ 103,20</button>
+            </div>
+
+            <div class="desconto">
+                -20%
+            </div>
+        </figure>
+
+        <figure class="margem">
+            <a href="#" title="crusader kings III">
+                <img class="imagem" height="136" src="../Imagens/miniaturas/crusader kings III royal.jpg" alt="crusader kings III" title="crusader kings III" />
+            </a>
+            <p>CRUSADER KINGS III</p>
+
+            <div class="preco">
+                <button>R$ 117,89</button>
+            </div>
+
+            <div class="desconto">
+                -10%
+            </div>
+        </figure>
+
+        <figure class="margem">
+            <a href="#" title="yberpunk 2077">
+                <img class="imagem" height="136" src="../Imagens/miniaturas/cyberpunk 2077.jpg" alt="cyberpunk 2077" title="cyberpunk 2077" />
+            </a>
+            <p>CYBERPUNK 2077</p>
+
+            <div class="preco">
+                <button>R$ 149,99</button>
+            </div>
+
+            <div class="desconto">
+                -25%
+            </div>
+        </figure>
+
+        <figure class="margem">
+            <a href="#" title="days gone">
+                <img class="imagem" height="136" src="../Imagens/miniaturas/daysgone.jpg" alt="days gone" title="days gone" />
+            </a>
+            <p>DaYS GONE</p>
+
+            <div class="preco">
+                <button>R$ 174,99</button>
+            </div>
+
+            <div class="desconto">
+                -12%
+            </div>
+        </figure>
+
+        <figure class="margem">
+            <a href="#" title="europa universalis rome gold">
+                <img class="imagem" height="136" src="../Imagens/miniaturas/europa universalis rome gold.jpg" alt="europa universalis rome gold" title="europa universalis rome gold" />
+            </a>
+            <p>EUROPA UNIVERSALIS ROME</p>
+
+            <div class="preco">
+                <button>R$ 4,24</button>
+            </div>
+
+            <div class="desconto">
+                -75%
+            </div>
+        </figure>
+
+        <figure class="margem">
+            <a href="#" title="hitman absolution">
+                <img class="imagem" height="136" src="../Imagens/miniaturas/hitman absolution.jpg" alt="hitman absolution" title="hitman absolution" />
+            </a>
+            <p>HITMAN ABSOLUTION</p>
+
+            <div class="preco">
+                <button>R$ 11,09</button>
+            </div>
+
+            <div class="desconto">
+                -70%
+            </div>
+        </figure>
+
+        <figure class="margem">
+            <a href="#" title="prison architect">
+                <img class="imagem" height="136" src="../Imagens/miniaturas/prison architect.jpg" alt="prison architect" title="prison architect" />
+            </a>
+            <p>PRISON ARCHITECT</p>
+
+            <div class="preco">
+                <button>R$ 14,49</button>
+            </div>
+
+            <div class="desconto">
+                -75%
+            </div>
+        </figure>
+
+        <figure class="margem">
+            <a href="#" title="THE ELDER SCROLLS V">
+                <img class="imagem" height="136" src="../Imagens/miniaturas/skyrim.jpg" alt="THE ELDER SCROLLS V" title="THE ELDER SCROLLS V" />
+            </a>
+            <p>THE ELDER SCROLLS V</p>
+
+            <div class="preco">
+                <button>R$ 159,90</button>
+            </div>
+
+            <div class="desconto">
+                -15%
+            </div>
+        </figure>
+
+        <figure class="margem">
+            <a href="#" title="sniper ghost warrior">
+                <img class="imagem" height="136" src="../Imagens/miniaturas/sniper ghost warrior.jpg" alt="sniper ghost warrior" title="sniper ghost warrior" />
+            </a>
+            <p>SNIPER GHOST WARRIOR</p>
+
+            <div class="preco">
+                <button>R$ 2,24</button>
+            </div>
+
+            <div class="desconto">
+                -85%
+            </div>
+        </figure>
+
+        <figure class="margem">
+            <a href="#" title="the escapists 2">
+                <img class="imagem" height="136" src="../Imagens/miniaturas/the escapists 2.jpg" alt="the escapists 2" title="the escapists 2" />
+            </a>
+            <p>THE ESCAPISTS 2</p>
+
+            <div class="preco">
+                <button>R$ 14,99</button>
+            </div>
+
+            <div class="desconto">
+                -75%
+            </div>
+        </figure>
+
+        <figure class="margem">
+            <a href="#" title="wasteland 3">
+                <img class="imagem" height="136" src="../Imagens/miniaturas/wasteland 3.jpg" alt="wasteland 3" title="wasteland 3" />
+            </a>
+            <p>WASTELAND 3</p>
+
+            <div class="preco">
+                <button>R$ 124,99</button>
+            </div>
+
+            <div class="desconto">
+                -21%
+            </div>
+        </figure>
+
+        <figure class="margem">
+            <a href="#" title="worms reloaded goty">
+                <img class="imagem" height="136" src="../Imagens/miniaturas/worms reloaded goty.jpg" alt="worms reloaded goty" title="worms reloaded goty" />
+            </a>
+            <p>WORMS RELOADED GOTY</p>
+
+            <div class="preco">
+                <button>R$ 9,19</button>
+            </div>
+
+            <div class="desconto">
+                -80%
+            </div>
+        </figure>
+
+        <figure class="margem">
+            <a href="#" title="empire of sin deluxe">
+                <img class="imagem" height="136" src="../Imagens/miniaturas/empireofsin.jpg" alt="empire of sin deluxe" title="empire of sin deluxe" />
+            </a>
+            <p>EMPIRE OF SIN DELUXE</p>
+
+            <div class="preco">
+                <button>R$ 46,99</button>
+            </div>
+
+            <div class="desconto">
+                -50%
+            </div>
+        </figure>
+        
+        <figure class="margem">
+            <a href="#" title="overcooked">
+                <img class="imagem" height="136" src="../Imagens/miniaturas/overcooked.jpg" alt="overcooked" title="overcooked" />
+            </a>
+            <p>OVERCOOKED</p>
+
+            <div class="preco">
+                <button>R$ 9,74</button>
+            </div>
+
+            <div class="desconto">
+                -75%
+            </div>
+        </figure>
+
+        <figure class="margem">
+            <a href="#" title="iron harvest">
+                <img class="imagem" height="136" src="../Imagens/miniaturas/ironharvest.jpg" alt="iron harvest" title="iron harvest" />
+            </a>
+            <p>IRON HARVEST</p>
+
+            <div class="preco">
+                <button>R$ 92,99</button>
+            </div>
+
+            <div class="desconto">
+                -15%
+            </div>
+        </figure>
+
+       <!--
+       <div id="area-promocoes">
+            <div class="polaroid">
+                <img src="../Imagens/miniaturas/biomutant.jpg"/>
+            </div>
+
+            <div class="polaroid">
+                <img src="../Imagens/miniaturas/biomutant.jpg"/>
+            </div>
+       </div>
+       -->
+    </div>
+
+
+
+       <!--                                                                   Rodapé                                                                              -->
+
+      <footer class="body-bottom">
+      
+        <div class="esquerda">
+          <ul>
+              <li><a href="#" target="_blank">Termos de uso</a></li>
+              <li><a href="#" target="_blank">Privacidade</a></li>
+              <li><a href="#" target="_blank">Regras</a></li>
+          </ul>
+        </div>
+        
+        <div class="divisoria-esquerda"></div>
+        
+        <div class="meio"><p>&copy; 2021 FirstPick, Todos os direitos reservados</p></div>
+      
+        <div class="divisoria-direita"></div>
+  
+        <div class="direita">
+          <ul>
+              <li><a href="#" target="_blank">Sobre a FirstPick</a></li>
+              <li><a href="#" target="_blank">Contato</a></li>
+              <li><a href="#" target="_blank">Equipe</a></li>
+          </ul>
+        </div>
+  
+        
+      </footer>
+
+
+    </div>
+    
+</body>
+
+<script src="../Js/Chamadas.js"></script>
+<script src="../Js/VoltarTopo.js"></script>
+
+</html>

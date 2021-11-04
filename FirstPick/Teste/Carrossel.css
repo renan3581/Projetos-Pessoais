@@ -1,0 +1,106 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+.carrossel{
+    margin-top: 600px;
+    margin-left: 490px;
+    width: 1100px;
+    height: 290px;
+    border: red solid 3px;
+    border-radius: 16px;
+
+}
+
+.gallery{
+    position: absolute;
+    width: 1000px;
+    height: 290px;
+    overflow-x: scroll;
+    left: 40px;
+    display: flex;
+    border-radius: 16px;
+    position: relative;
+    
+
+}
+.card_img{
+    
+    border-radius: 16px;
+    
+}
+.card_img:hover {
+    animation: bounce 1000ms linear;
+}
+
+.card{
+    margin-left: 20px;
+    margin-top: 20px;
+    
+    
+}
+
+/*                                                                            Scroll                                                                        */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-button {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+    border: 2px solid #198dda;
+    border-radius: 57px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #575757;
+  }
+  
+  ::-webkit-scrollbar-thumb:active {
+    background: #ffffff;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0);
+    border: 0px none #ffffff;
+    border-radius: 49px;
+  }
+  
+  ::-webkit-scrollbar-track:hover {
+    background: #000000;
+  }
+  
+  ::-webkit-scrollbar-track:active {
+    background: #000000;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+
+
+
+
+@keyframes bounce{
+20%, 50%, 80%, to {
+    transform: translateY(0);
+}
+40%{
+    transform: translateY(-30px);
+}
+70%{
+    transform: translateY(-15px);
+}
+
+90%{
+    transform: translateY(-4px);
+
+}
+}
